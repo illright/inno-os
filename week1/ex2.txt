@@ -1,0 +1,4 @@
+  252  ls inno-os
+  253  cd inno-os
+  254  git status
+  255  history > ex2.txt
