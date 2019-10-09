@@ -1,0 +1,6 @@
+A virtual address cannot be used directly as a position in the main memory
+since it goes beyond its size. This allows the operating system to handle
+many memory-intensive programs, even though the physical memory space is
+not enough. A physical address is a position in the memory, accessing by
+a physical address guarantees the performance of the main memory as opposed
+to the swap.

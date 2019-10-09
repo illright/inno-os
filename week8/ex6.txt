@@ -1,0 +1,5 @@
+A page size of 8 KB means that there are 8 * 1024 = 8192 bytes to index
+within the page. Taking a binary logarithm of that value yields 13 - the amount
+of bits needed to index the entire page. Since the virtual addresses are 16 bits
+long, that leaves only 3 bits to index the page table entries. Therefore, there
+are 2^3 = 8 pages of virtual memory in that machine.
