@@ -1,0 +1,7 @@
+An improved sequence of page references is the one that reuses the recently used pages.
+For a sequence like 1, ..., N, N, ..., 1 one may get the hit/miss ratio to 1, provided that
+the number of page frames is enough to fit all N pages in memory. Otherwise, the
+performance will degrade.
+
+A further improve in the hit/miss ratio would be to just keep accessing one page forever.
+In that case there would only be 1 miss and the rest would be hits.
