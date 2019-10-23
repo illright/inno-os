@@ -1,0 +1,9 @@
+Command `touch ../week1/file.txt && link ../week1/file.txt _ex2.txt1`
+No output.
+
+Command `find .. -inum $(ls -i _ex2.txt | cut -f1 -d' ')`
+../week1/file.txt
+../week10/_ex2.txt
+
+Command `find .. -inum $(ls -i _ex2.txt | cut -f1 -d' ') -exec rm {} \;`
+No output.
