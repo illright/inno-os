@@ -1,0 +1,8 @@
+The first code sample produces "Hello" two times because
+the buffer was copied during the fork while the "Hello" string
+was in it, and then flushed two times.
+
+The second code sample produces only one "Hello", followed by
+two newlines because "Hello" was flushed out of the buffer before
+the fork, therefore it didn't make it into both processes, unlike
+the newline.
