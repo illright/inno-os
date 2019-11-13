@@ -1,0 +1,14 @@
+Let's start from avoidance. This strategy is the most fail-proof, but it requires
+changes in the system architecture, so unless we are designing for a special device
+where the deadlocks are a known problem, we won't be able to utilize this method.
+
+Prevention requires the operating system to look into the future at least a little bit,
+deciding which process will need a particular resource at which time. This is again
+not always possible for a general-purpose operating system that runs arbitrary code,
+but in some systems where all the processes are known, this could be a way to prevent
+deadlocks with the existing system design, without introducing changes (potentially, very major).
+
+Recovery is the method that requires very little preparation, so it works best
+in general-purpose operating systems that run arbitrary code. However, this method
+may prove to not be as efficient as the ones before because recovery from deadlocks
+on non-preemptable resources is either dangerous or not effective enough.
